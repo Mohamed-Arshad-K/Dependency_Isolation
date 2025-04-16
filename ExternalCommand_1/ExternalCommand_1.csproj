@@ -8,8 +8,19 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="ILRepack" Version="2.0.41">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<IsRepackable>true</IsRepackable>
+	</PropertyGroup>
+
+	<ItemGroup>
 		<Reference Include="EMath.Lib">
-		  <HintPath>..\Dependencies\1.0.0\EMath.Lib.dll</HintPath>
+			<HintPath>..\Dependencies\1.0.0\EMath.Lib.dll</HintPath>
 		</Reference>
 		<Reference Include="RevitAPI">
 			<HintPath>C:\Program Files\Autodesk\Revit 2024\RevitAPI.dll</HintPath>
